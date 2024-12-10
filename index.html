@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaux en détresse</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script src="java.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav id="menu">
+            <a href="Index.html"><img class="logo" src="logo-asso.png"></a>
+            <button><img class="menuchat" src="menu.png"></button>
+            <ul>
+                <li><a href="Index.html"> Accueil</a></li>
+                <li><a href="Adoption.html"> Adoption</a></li>
+                <li><a href="Chat-perdu-trouve.html"> Chat perdu / trouvé</a></li>
+                <li><a href="Protection-animale.html"> Protection animale</a></li>
+                <li><a href="Actu.html"> Actu</a></li>
+                <li><a href="Contact.html" target="_blank"> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="chat"><img src="Chat-quémandeur.png" style="width:100%"></div>
+
+    <div class="box">
+        <div>
+            <h2 class="texte_blanc">Actu</h2>
+        </div>
+
+        <!-- Carousel -->
+        <div class="slide-container">
+            <div class="custom-slider fade">
+                <div class="slide-index">1 / 4</div>
+                <a href="Actu.html#Noël" target="_blank">
+                    <img class="slide-img" src="ventes_de_noel.jpg">
+                </a>
+                <div class="slide-text">24.11.2024 : Ventes de Noël</div>
+            </div>
+
+            <div class="custom-slider fade">
+                <div class="slide-index">2 / 4</div>
+                <a href="Actu.html#réfection" target="_blank">
+                    <img class="slide-img" src="auvent.jpg">
+                </a>
+                <div class="slide-text">23.02.2024 : Réfection du auvent</div>
+            </div>
+
+            <div class="custom-slider fade">
+                <div class="slide-index">3 / 4</div>
+                <a href="Actu.html#travaux" target="_blank">
+                    <img class="slide-img" src="auvent-casse.jpg">
+                </a>
+                <div class="slide-text">04.02.2024 : Travaux</div>
+            </div>
+
+            <div class="custom-slider fade">
+                <div class="slide-index">4 / 4</div>
+                <a href="Actu.html#sterilisation" target="_blank">
+                    <img class="slide-img" src="sterilisation-des-chats.jpg">
+                </a>
+                <div class="slide-text">05.03.2017 : Stérilisation des chats</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+
+        <br>
+        <div class="slide-dot">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </div>
+    <!-- carousel -->
+
+    <div class="conteneur">
+        <div>
+            <h1>Présentation</h1>
+        </div>
+
+        <div>
+            <h2>Notre refuge</h2>
+            <p>Notre refuge est situé au cœur de la forêt dans les environs de Colmar, en bordure d'une petite rivière. Nous soignons et nourrissons actuellement environ 50 chats. La plupart de nos chats sont en liberté, certains sont sociables et ne demandent qu'à être caressé (dans le sens du poil et en évitant le ventre, nom d'un chat !). Nous avons aussi quelques minous plus sauvages, qui ne se laissent pas approcher de près, ce qui ne nous facilite pas la vie pour les soigner !Tous les chats sont stérilisés et tatoués, la majorité sont vaccinés. </p>
+            <p>Nous proposons les plus sociables à l’adoption. Ces chats sont isolés à la chatterie et sont bien sûr stérilisés, tatoués et vaccinés ( typhus et coryza). Une participation aux frais vétérinaires d'un montant de 180 € est donc demandée aux futurs adoptants pour nous permettre de poursuivre notre action. Une réduction fiscale de 66 % vous est accordée, ce qui équivaut donc à environ 62 euros pour une adoption ! </p>
+        </div>
+
+        <div>
+            <h2>La chatterie</h2>
+            <p>Tous les matins, dimanche et jours fériés compris, une équipe de bénévoles vient au refuge pour le nettoyage des locaux et le soir d’autres bénévoles viennent pour nourrir nos petits protégés, pour les soigner mais aussi les câliner.</p>
+            <p>Toutes les bonnes volontés sont les bienvenues pour nous aider dans ce difficile combat, si prenant, pour sauver des vies animales ! Vous ne le regretterez pas car notre association travaille dans la paix, la joie et la bonne humeur, en respectant la participation de tous, fut elle ponctuelle ou minime ! </p>
+        </div>
+
+        <div>
+            <h2>Nous aider</h2>
+            <p> Vous pouvez agir concrètement en adoptant un animal ou en l’accueillant dans l’attente de son placement et devenir ainsi famille d'accueil ! </p>
+            <p>Vous pouvez également nous faire un don. L'association étant reconnue d'utilité publique, nous établirons un reçu fiscal qui vous permettra d'obtenir une réduction fiscale de 66 % du montant de votre don .</p>
+            <p>Vos dons nous permettent de soigner et nourrir nos protégés au Refuge du Tichele.
+            Vous pouvez aussi soutenir l'association en devenant membre.</p>
+            <p>Téléchargez le <a class="pdf" href="ficheAdhesion.pdf">fichier PDF</a> et envoyer nous le formulaire  rempli à l'adresse suivante:<br/>
+            Animaux en détresse<br/>
+            Lieu dit Le Tichele<br/>
+            68 920 Wettolsheim Erlen </p>
+
+            <div>
+                <h2>Adopter un animal</h2>
+                <p>Adopter un chat abandonné en refuge plutôt que de l'acheter ou de soulager la conscience des particuliers qui laissent leur chats se reproduire est un acte extrêmement positif et très
+                    concret qui démontre un réel amour et intérêt pour la protection animale ! </p>
+                <p>De plus, en sauvant un animal, vous en sauvez un deuxième car nos capacités d'accueil et nos moyens
+                financiers ne sont pas illimités. Chaque adoption nous permet donc d'envisager plus sereinement l'accueil de nouveaux chats en détresse ! </p>
+                <p>Si vous adoptez un chat par le biais de notre association, nous vous proposerons un contrat d’adoption incluant la prise en charge par nos soins des actes vétérinaires suivants :<br/>
+                - identification (obligation inscrite dans la loi) ; <br/>
+                - stérilisation ou castration (pour lutter contre la prolifération des animaux de compagnie) ;<br/>
+                - primo vaccination + rappel : typhus et coryza ;<br/>
+                - traitements contre les parasites et vermifuges. <br/> </p>
+                <p>La somme de 180 euros que vous verserez à l’association, ne correspond pas à l’achat de l’animal, mais elle permettra de couvrir une partie des frais vétérinaires engagés par le refuge. Cette somme étant considérée comme un don, elle vous donne droit à une réduction d’impôt de 66%. Autrement dit, l’adoption de votre compagnon vous reviendra à environ 53 euros (si on tient compte de la déduction fiscale), tout compris, contre environ 250 à 350 euros si vous réalisez les mêmes soins chez un vétérinaire par vous même. </p>
+                <p>Nous mettons également en ligne des animaux qui pourront être adoptés de particuliers à particuliers sans transiter par le refuge, ce qui leur évitera ainsi le stress du changement de lieu et diminuera le risque de contracter des maladies. Nous espérons vous avoir convaincu de la justesse et de l'importance de notre combat pour sauver des vies animales et vous souhaitons une bonne route avec votre nouveau compagnon à 4 pattes, qui nous l’espérons, vous apportera toute la joie et l’affection que vous attendez.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<footer>
+    <p>Copyright 2009 -Indexhibit</p>
+</footer>

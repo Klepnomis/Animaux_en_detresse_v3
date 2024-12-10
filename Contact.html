@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- carousel -->
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+
+    <title>Animaux en détresse</title>
+    <link rel="stylesheet" href="style.css">
+    <!--3 balises "link" fournies par Google Fonts pour nous permettre d'utiliser des polices non "web-safe"--> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <script src="java.js"async></script>
+</head>
+
+<body>
+
+    <header>
+
+        <nav id="menu">
+
+            <a href="index.html"><img class="logo" src="logo-asso.png"></a>
+            
+            <button><img class="menuchat" src="menu.png"></button>
+            <ul>
+                
+                <li><a href="index.html"> Accueil</a></li>
+                <li><a href="Adoption.html"> Adoption</a></li>
+                <li><a href="Chat-perdu-trouve.html"> Chat perdu / trouvé</a></li>
+                <li><a href="Protection-animale.html"> Protection animale</a></li>
+                <li><a href="Actu.html"> Actu</a></li>
+                <li><a href="Contact.html"target="_blank"> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="conteneur">
+
+      <div>
+      <h1 style="display: flex; justify-content: space-around;">Contact </h1>
+      </div>
+
+    <div>
+
+            <h2>Animaux en détresse</h2>
+            <p>Lieu dit "Le Tichele" <br/>
+              68 920 Wettolsheim Les Erlen</p>
+                
+            <p>03 89 24 04 36 <br/>
+              ou <br/>
+              06 86 03 33 55 <br/>
+              
+              contact@animaux-en-detresse.com</p>
+          
+        </div>
+        </div>
+        
+
+<!-- formulaire via developer.mozilla.org : https://developer.mozilla.org/fr/docs/Learn/Forms/Your_first_form -->
+
+<!-- "form" définit un formulaire -->
+
+<form action="/ma-page-de-traitement" method="post">
+
+    <ul>
+        <li>
+          <label for="name">Nom&nbsp;:</label>
+          <input type="text" id="name" name="user_name" />
+        </li>
+
+        <li>
+            <label for="name">Objet&nbsp;:</label>
+            <input type="text" id="name" name="user_name" />
+          </li>
+
+        <li>
+          <label for="mail">E-mail&nbsp;:</label>
+          <input type="email" id="mail" name="user_mail" />
+        </li>
+
+        <li>
+          <label for="msg">Message&nbsp;:</label>
+          <textarea id="msg" name="user_message"></textarea>
+        </li>
+
+      </ul>
+
+      <div class="button">
+        <button type="submit">Envoyer</button>
+      </div>
+      
+
+</form>
+
+</body>
+</html>
+
+<footer>
+  <p>Copyright 2009 -Indexhibit</p>
+</footer>
